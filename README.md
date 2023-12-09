@@ -17,7 +17,7 @@ Projeto para apresentar receitas deliciosas com imagens atraentes e uma estrutur
 O projeto "Arroz com Feijão" visa fornecer uma plataforma visualmente atraente e organizada para descobrir receitas deliciosas. Cada receita é apresentada com uma imagem apetitosa e categorizada para facilitar a navegação.
 
 # Capturas de Tela
-screencapture-777sevenseven-github-io-Site-de-ReceitasHTML-CSS-2023-12-09-15_53_29](https://github.com/777SevenSeven/Site-de-ReceitasHTML-CSS/assets/135830488/37a0c8f0-4d34-4ddc-983e-9364c86ec91e)
+https://github.com/777SevenSeven/Site-de-ReceitasHTML-CSS/assets/135830488/37a0c8f0-4d34-4ddc-983e-9364c86ec91e
 
 # Tecnologias Utilizadas
 

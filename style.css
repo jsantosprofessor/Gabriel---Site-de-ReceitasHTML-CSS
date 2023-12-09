@@ -205,17 +205,20 @@
     margin: 0 468px 0 468px;
 }
 
-.receitas-populares-title {
+.receitas-populares-texto-na-imagem-titulo-principal {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     flex: column;
     justify-content: center;
     align-items: center;
-    color: #FF2400;
+    color: #FFFFFF;
     margin: 50px 0 20px 0;
+    z-index: 1;
 }
 
 .receitas-populares-img {
+
+    filter: brightness(50%); 
     flex: column;
     justify-content: left;
     align-items: center;
@@ -223,6 +226,7 @@
     width: 940px;
     height: 271px;
     border-radius: 10px 10px 10px 10px;
+    display: block;
 }
 
 .receitas-populares-ancora {
@@ -236,19 +240,22 @@
 }
 
 .receitas-populares-content {
+    position: relative;
+    text-align: center;
     display: flex;
     align-items: center;
 }
 
-.receitas-populares-text-title {
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    flex: column;
-    justify-content: center;
-    align-items: center;
-    color: #FF2400;
-    margin: 45px 0 20px 30px;
-}
+.receitas-populares-texto-na-imagem {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    z-index: 1;
+    font-size: 24px;
+  }
 
 .receitas-populares-text-paragraph {
     font-weight:bold;

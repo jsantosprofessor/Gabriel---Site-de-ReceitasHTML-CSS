@@ -43,11 +43,15 @@
     flex: 1;
     height: 44px;
     margin: 0 0 0 40px;
-    box-shadow: 2px 2px 8px #1F1410;
+    box-shadow: 1px 2px 8px #1f1410;
     border-radius: 45px 0 0 45px;
     background-color: #FFFDD0; 
     color: #000000; 
     width: 100%;
+}
+
+.header-botao-de-pesquisar-img {
+    height: 30px;
 }
 
 .header-botão-de-pesquisar {
@@ -61,7 +65,7 @@
     display: flex;
     align-items: center;
     margin: 0 0px 0 0;
-    box-shadow: 1px 2px 8px #1f1410;
+    box-shadow: 2px 2px 8px #1f1410;
 }
 
 .login {
@@ -75,7 +79,7 @@
     height: 40px;
     box-shadow: 2px 2px 8px #1f1410a6;
     border-radius: 80px 80px 80px 80px;
-    background-color: #FF2400;
+    background-color: #FFFDD0;
 }
 
 .header-nav {
@@ -757,7 +761,7 @@
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
     color: #F9F5E1;
     margin-top: 25px;
     flex-direction: row;
@@ -771,7 +775,7 @@
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
     color: #F9F5E1;
     margin-top: 25px;
     flex-direction: row;
@@ -873,26 +877,21 @@
 }
 
 .footer-mini-menu-redes-sociais-item1 img:hover {
-    transform: scale(1.1);
-    background-color: #00B894;
+    transform: scale(1.2);
 }
 
 .footer-mini-menu-redes-sociais-item2 img:hover {
-    transform: scale(1.1);
-    background-color: #00B894;
+    transform: scale(1.2);
 }
 
 .footer-mini-menu-redes-sociais-item3 img:hover {
-    transform: scale(1.1);
-    background-color: #00B894;
+    transform: scale(1.2);
 }
 
 .footer-mini-menu-redes-sociais-item4 img:hover {
-    transform: scale(1.1);
-    background-color: #00B894;
+    transform: scale(1.2);
 }
 
 .footer-mini-menu-redes-sociais-item5 img:hover {
-    transform: scale(1.1);
-    background-color: #00B894;
+    transform: scale(1.2);
 }

@@ -1,213 +1,898 @@
-<!DOCTYPE html>
-<html lang="pt-br"> <!--Idioma do Site-->
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
-<!-------------------------------------------------------------------------------- Cabeça do site ------------------------------------------------------------------------------------------------------>
-<head>
+.body {
+    font-size: 100%;
+    background-color: #FFFFFF;
+    color: black;
+}
 
-  <!--SEO do Site-->
-  <meta charset="UTF-8">
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0 28px 0;
+    background-color: #FF2400; 
+    margin: 0 0 0 0;
+    border-bottom: 1px solid #333333;
+}
 
-  <!--Open Graphs Para redes sociais-->
-  <meta property="og:title" content="Arroz Com Feijão - Seu Site de Receitas!">
-  <meta property="og:description" content="Um livro de receitas online para qualquer apaixonado por comer bem!">
+.header-logotipos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 400px;
+}
 
-  <meta name="description" content="Um livro de receitas online para qualquer apaixonado por comer bem!"> <!--Descrição do site quando encontrado via pesquisa-->
-  <meta name="keywords" content="Receitas, Brasil, Caseiras"> <!-- Palavras-chave relevantes -->
-  <meta name="author" content="André Antônio da Silva Queiroz"> <!-- Autor do conteúdo -->
+.header-logotipo-title {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 38px;
+    color: #FFFFFF;
+    margin-right: auto;
+}
 
-  <!-- Para melhorar a experiência de dispositivos móveis quando compartilhado o site -->
-  <meta property="og:image" content="URL_DA_IMAGEM">
-  <meta property="og:url" content="URL_DO_SEU_SITE"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+.header-search {
+    border: none;
+    flex: 1;
+    height: 44px;
+    margin: 0 0 0 40px;
+    box-shadow: 2px 2px 8px #1F1410;
+    border-radius: 45px 0 0 45px;
+    background-color: #FFFDD0; 
+    color: #000000; 
+    width: 100%;
+}
 
-  <!-- Compatibilidade com outros sites ou dispositivos -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com Internet Explorer -->
+.header-botão-de-pesquisar {
+    order: 3;
+    background-color: #00B894;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    margin: 0 0px 0 0;
+    box-shadow: 1px 2px 8px #1f1410;
+}
 
-  <!-- Ícone para apple -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <!-- Ícone para Android -->
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+.login {
+    order: 4;
+    border: none;
+    cursor: pointer;
+    margin: 0 400px 0 45px;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 8px #1f1410a6;
+    border-radius: 80px 80px 80px 80px;
+    background-color: #FF2400;
+}
 
-  <!-- Ícone para Windows -->
-  <meta name="msapplication-TileImage" content="mstile-144x144.png"> 
-  <meta name="msapplication-TileColor" content="#ffffff">
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+    color:  #FFFFFF;
+    background-color: #2D1E18;
+    border-bottom: 1px solid #333333;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 5px 0 5px 0;
+}
 
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="icon" href="icon.png" type="image/x-icon"> <!--fav-icon do site-->
-  <title>Arroz Com Feijão - Seu Site de Receitas!</title> <!--titulo da guia-->
-</head>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<body class="body">
+.header-nav a:hover {
+    color: #e9b2a9;
+    text-decoration: none;
+    border-bottom: 2px solid #333333;
+}
+.header-nav-item1 {
+    margin: 0 5px 0 290px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-  <!-------------------------------------------------------------------------------- Cabeçalho ----------------------------------------------------------------------------------------------------->
-  <header class="header">
-    <div class="header-logotipos">
-      <a href="index.html">
-        <h1 class="header-logotipo-title">ARROZ COM FEIJÃO</h1> <!-- Logotipo da página -->
-      </a>
-    </div>
-    <input class="header-search" type="text" placeholder="  Escreva aqui a receita que deseja procurar: (exemplo: Macarrão com salsicha)"> <!--input para pesquisar a receita-->
-    <button class="header-botão-de-pesquisar">
-      <img class="header-botao-de-pesquisar-img" src="minilupa.png" alt="pesquisar">
-    </button>
-    <img class="login" src="conta.png" alt="login"> <!--Icon para fazer login ou olhar a conta-->
-  </header>
-  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+.header-nav-item2 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-  <!------------------------------------------------------------------------------- Menu de Navegação ------------------------------------------------------------------------------------------------->
-  <nav class="header-nav">
-    <a class="header-nav-item1" href="#">Bolos e Tortas</a>
-    <a class="header-nav-item2" href="#">Carnes</a>
-    <a class="header-nav-item3" href="#">Aves</a>
-    <a class="header-nav-item4" href="#">Peixes e Frutos do Mar</a>
-    <a class="header-nav-item5" href="#">Saladas e Molhos</a>
-    <a class="header-nav-item6" href="#">Sopas</a>
-    <a class="header-nav-item7" href="#">Massas</a>
-    <a class="header-nav-item8" href="#">Bebidas</a>
-    <a class="header-nav-item9" href="#">Doces e Sobremesas</a>
-    <a class="header-nav-item10" href="#">Lanches</a>
-    <a class="header-nav-item11" href="#">Alimentação Saudável</a>
-    <a class="header-nav-item12" href="#">Todas as Receitas</a>
-  </nav>
-  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-  <br>
+.header-nav-item3 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-  <!--área de receitas populares-->
-  <div class="receitas-populares">
-    <!-- Banner da seção Receitas Destaques -->
-    <div class="receitas-populares-content">
-      <img class="receitas-populares-img" src="macarrão com salsicha.jpg">
-    </div>
-  </div>
+.header-nav-item4 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-  <!--área de outras receitas-->
-  <div class="outras-receitas">
+.header-nav-item5 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-    <!-- Fileiras de Imagens de Receitas -->
+.header-nav-item6 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-    <!-- Fileira horizontal de imagens - 1 -->
-    <div class="outras-receitas-content-part-1">
-      <img class="outras-receitas-img" src="enrolado de salsicha.jpg">
-      <img class="outras-receitas-img2" src="feijoada.png">
-      <img class="outras-receitas-img3" src="pastel.jpg">
-    </div>
+.header-nav-item7 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-    <!-- Fileira horizontal de imagens - 2 -->
-    <div class="outras-receitas-content-part-2">
-      <img class="outras-receitas-img4" src="espetinho.jpg">
-      <img class="outras-receitas-img5" src="frango-assado.jpg">
-      <img class="outras-receitas-img6" src="bolonhesa.jpg">
-    </div>
+.header-nav-item8 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-    <!-- Fileira horizontal de imagens - 3-->
-    <div class="outras-receitas-content-part-3">
-      <img class="outras-receitas-img7" src="esfiha.jpg">
-      <img class="outras-receitas-img8" src="coxinha.jpg">
-      <img class="outras-receitas-img9" src="bolinha-de-queijo.jpg">
-    </div>
-  </div> <!--final da área outras receitas com conteúdos de imagem-->
+.header-nav-item9 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-  <!--área de receitas em vídeo-->
-  <div class="outras-receitas-receitas-em-video">
-    <div class="outras-receitas-receitas-em-video-text">
-      <h2 class="outras-receitas-receitas-em-video-subtitulo">Receitas em Video</h2>
-      <p class="outras-receitas-receitas-em-video-paragraph">Receitas com videos aulas e passo a passos intuitivos e práticos!</p>
-    </div>
+.header-nav-item10 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-  <!--Fileira horizontal de videos - 1-->
-    <div class="outras-receitas-receitas-em-video-part1">
-      <iframe class="outras-receitas-receitas-em-video-video1" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-      <iframe class="outras-receitas-receitas-em-video-video2" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-      <iframe class="outras-receitas-receitas-em-video-video3" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-    </div>
+.header-nav-item11 {
+    margin: 0 5px 0 24px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    border-right: 1px solid #333333;
+}
 
-  <!--Fileira horizontal de videos - 2-->
-    <div class="outras-receitas-receitas-em-video-part2">
-      <iframe class="outras-receitas-receitas-em-video-video4" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-      <iframe class="outras-receitas-receitas-em-video-video5" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-      <iframe class="outras-receitas-receitas-em-video-video6" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-    </div>
+.header-nav-item12 {
+    margin: 0 290px 0 0px;
+    color:  #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-  <!--Fileira horizontal de videos - 3-->
-    <div class="outras-receitas-receitas-em-video-part3">
-      <iframe class="outras-receitas-receitas-em-video-video7" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-      <iframe class="outras-receitas-receitas-em-video-video8" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-      <iframe class="outras-receitas-receitas-em-video-video9" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
-    </div>
+.receitas-populares {
+    margin: 0 0 0 50px;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    color:  #333333;
+    margin: 0 468px 0 468px;
+}
 
-  <!--texto final antes de chegar no rodapé-->
-    <p class="pré-footer-text-paragraph">Nosso site tem milhares de receitas brasileiras, fáceis e com qualidade, recomende o site para os seus amigos, família e colegas.
-      <br>
-   Arroz com feijão, feito com amor, para melhorar sua refeição!
-    </p> 
-  </div> <!--Aqui finaliza-se a área de receitas em vídeo-->
+.receitas-populares-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF2400;
+    margin: 50px 0 20px 0;
+}
 
-  <!-------------------------------------------------------------------------------- Rodapé ------------------------------------------------------------------------------------------------------>
-  <footer class="footer-final">
-    <div class="footer-logo">
-      <!--Logotipo do site no rodapé-->
-      <a href="index.html" class="footer-text-informacoes-third-title">ARROZ COM FEIJÃO</a>
-      <!--redirecionando ao clicado, para a home-->
-    </div>
+.receitas-populares-img {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    width: 940px;
+    height: 271px;
+    border-radius: 10px 10px 10px 10px;
+}
 
-    <!--área do Menu de informações-->
-    <div class="footer-main-menu">
-      <a href="#" class="footer-main-menu-item1">Quem Somos</a>
-      <a href="#" class="footer-main-menu-item2">Termos de Uso</a>
-      <a href="#" class="footer-main-menu-item3">Privacidade</a>
-    </div>
+.receitas-populares-ancora {
+    font-weight:bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    color:  #3C9141;
+    margin: 10px 0 0px 0px;
+}
 
-    <!--área do Menu de rede sociais-->
-    <div class="footer-mini-menu">
-      <ul class="footer-mini-menu-list">
-        <li class="footer-mini-menu-redes-sociais">Redes Sociais:</li>
-        <li class="footer-mini-menu-redes-sociais-item1">
-          <a href="https://api.whatsapp.com/send?phone=5543996310873&text=Salve%2C%20b%C3%B3%20se%20inturmar%3F"
-            target="_blank">
-            <img class="whatsapp" src="whatsapp.png" alt="whatsapp">
-          </a>
-        </li>
-        <li class="footer-mini-menu-redes-sociais-item2">
-          <a href="https://github.com/777SevenSeven" target="_blank">
-            <img class="github" src="github.png" alt="github">
-          </a>
-        </li>
-        <li class="footer-mini-menu-redes-sociais-item3">
-          <a href="https://www.linkedin.com/in/andre-queirozz/" target="_blank">
-            <img class="linkedin" src="linkedin.png" alt="linkedin">
-          </a>
-        </li>
-        <li class="footer-mini-menu-redes-sociais-item4">
-          <a href="https://www.instagram.com/andrequeir0z/" target="_blank">
-            <img class="instagram" src="instagram.png" alt="instagram">
-          </a>
-        </li>
-        <li class="footer-mini-menu-redes-sociais-item5">
-          <a href="https://www.facebook.com/AndreAntonioz/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"
-            target="_blank">
-            <img class="facebook" src="facebook.png" alt="facebook">
-          </a>
-        </li>
-      </ul>
+.receitas-populares-content {
+    display: flex;
+    align-items: center;
+}
 
-      <!--área de Informações de contato do rodapé-->
-      <ul>
-        <p class="footer-menu-contato-title">Contato</p>
-        <li class="footer-menu-contato-item1">Telefone:+55 43 99631-0873</li>
-        <li class="footer-menu-contato-item2">Email:andreantoniodasilvaqueiroz@gmail.com</li>
-      </ul>
-    </div>
+.receitas-populares-text-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF2400;
+    margin: 45px 0 20px 30px;
+}
 
-    <!--área de copyrights do site-->
-    <div class="footer-text-informacoes-copyrights">
-      <p class="footer-text-informacoes-paragraph">
-        © 2023 Arroz com Feijão. Desenvolvido por André Antônio da Silva Queiroz (777SevenSeven). Todos os direitos
-        reservados.
-      </p>
-    </div>
-  </footer>
-</body>
-</html>
+.receitas-populares-text-paragraph {
+    font-weight:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    color: #120C0A;
+    margin: 0 30px 90px 30px;
+}
+.outras-receitas {
+    margin: 0 0 0 50px;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    margin: 0 468px 0 468px;
+}
+
+.outras-receitas-content-part-1 {
+    display: flex;
+    align-items: center;
+    border: 1px 1px 1px 1px solid #333333;
+}
+
+.outras-receitas-content-part-2 {
+    display: flex;
+    align-items: center;
+    border: 1px 1px 1px 1px solid #333333;
+}
+
+.outras-receitas-content-part-3 {
+    display: flex;
+    align-items: center;
+    border: 1px 1px 1px 1px solid #333333;
+}
+
+.outras-receitas-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF2400;
+    margin: 50px 0 20px 0;
+    border: 1px 1px 1px 1px solid #333333;
+}
+
+.outras-receitas-img {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img2 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img3 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img4 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img5 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img6 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img7 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img8 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-img9 {
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-text-paragraph {
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    margin: 15px 0 95px 25px;
+    border: 1px 1px 1px 1px solid #333333;
+    color: #120C0A;
+}
+
+.outras-receitas-ancora {
+    font-weight:bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    flex: column;
+    justify-content: left;
+    align-items: center;
+    color:  #3C9141;
+    margin: 10px 0 0px 0px;
+    border: 1px 1px 1px 1px solid #333333;
+}
+
+.outras-receitas-text-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    color: #120C0A;
+    margin: 45px 0 20px 30px;
+    border: 1px 1px 1px 1px solid #333333;
+    font-size: 24px;
+}
+
+.outras-receitas-receitas-em-video {
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    margin: 0 468px 0 468px;
+}
+
+.outras-receitas-receitas-em-video-subtitulo {
+    margin: 35px 0 5px 0;
+    font-size: 24px;
+    color: #FF2400;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.outras-receitas-receitas-em-video-paragraph {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #120C0A;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.outras-receitas-receitas-em-video-video1 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video2 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video3 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video4 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video5 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video6 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video7 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video8 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.outras-receitas-receitas-em-video-video9 {
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    flex-shrink: 0;
+    height: 250px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.pré-footer-text-paragraph {
+    color: #333333;
+    margin: 10px 0 25px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-final {
+    padding: 20px 0 0px;
+    background-color: #FF2400;
+    text-align: center;
+    border: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-top: 10px;
+}
+
+.footer-mini-menu {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.footer-mini-menu-title {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #F9F5E1;
+}
+
+.footer-mini-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer-mini-menu-item {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #F9F5E1;
+    text-decoration: none;
+}
+
+.footer-mini-menu-item:hover {
+    text-decoration: underline;
+}
+
+.footer-text-informacoes-third-title {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #F9F5E1;
+}
+
+.footer-text-informacoes {
+    text-align: left;
+    color: #F9F5E1;
+}
+
+.footer-main-menu-item1,
+.footer-main-menu-item2,
+.footer-main-menu-item3 {
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-top: 25px;
+}
+
+.footer-text-informacoes-copyrights {
+    margin-top: 20px;
+    background-color: #1f1410;
+    border-top: 1px solid #333333;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-text-informacoes-paragraph {
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1f1410;
+    color: #464646;
+}
+
+.footer-main-menu {
+    margin: 0 0 10px 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-mini-menu-item1 {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 410px 0 290px;
+}
+.footer-mini-menu-item2 {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 410px 0 290px;
+}
+
+.footer-mini-menu-item3 {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 410px 0 220px;
+}
+
+
+.footer-mini-menu-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 800px 5px 0;
+    align-items:end;
+    padding: 0 90px 0px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-mini-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 400px 0 400px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-mini-menu-redes-sociais {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F9F5E1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-menu-contato-title {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-menu-contato-item1 {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-menu-contato-item2 {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #F9F5E1;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-mini-menu-redes-sociais-item1 {
+    margin: 0 10px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    
+}
+
+.footer-mini-menu-redes-sociais-item2 {
+    margin: 0 10px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-mini-menu-redes-sociais-item3 {
+    margin: 0 10px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-mini-menu-redes-sociais-item4 {
+    margin: 0 10px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-mini-menu-redes-sociais-item5 {
+    margin: 0 10px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footer-mini-menu-redes-sociais-item1 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-color: #F9F5E1;
+}
+
+.footer-mini-menu-redes-sociais-item2 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-color: #F9F5E1;
+}
+
+.footer-mini-menu-redes-sociais-item3 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-color: #F9F5E1;
+}
+
+.footer-mini-menu-redes-sociais-item4 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-color: #F9F5E1;
+}
+
+.footer-mini-menu-redes-sociais-item5 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-color: #F9F5E1;
+}
+
+.footer-mini-menu-redes-sociais-item1 img:hover {
+    transform: scale(1.1);
+    background-color: #00B894;
+}
+
+.footer-mini-menu-redes-sociais-item2 img:hover {
+    transform: scale(1.1);
+    background-color: #00B894;
+}
+
+.footer-mini-menu-redes-sociais-item3 img:hover {
+    transform: scale(1.1);
+    background-color: #00B894;
+}
+
+.footer-mini-menu-redes-sociais-item4 img:hover {
+    transform: scale(1.1);
+    background-color: #00B894;
+}
+
+.footer-mini-menu-redes-sociais-item5 img:hover {
+    transform: scale(1.1);
+    background-color: #00B894;
+}

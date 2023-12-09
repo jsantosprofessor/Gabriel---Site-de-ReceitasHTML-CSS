@@ -20,7 +20,7 @@ O projeto "Arroz com Feijão" visa fornecer uma plataforma visualmente atraente 
 
 [Adicione capturas de tela aqui]
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 - HTML
 - CSS
@@ -31,3 +31,9 @@ O projeto "Arroz com Feijão" visa fornecer uma plataforma visualmente atraente 
 Entre pelo link: https://777sevenseven.github.io/Site-de-ReceitasHTML-CSS/
                             OU
 Clone o repositório e abra o arquivo `index.html` no seu navegador.
+
+# Uso
+Navegue pelas diferentes seções para descobrir receitas. Clique nas imagens para ver detalhes específicos de cada receita.
+
+Contribuição
+Sinta-se à vontade para contribuir. Antes de enviar uma pull request, certifique-se de seguir as diretrizes de contribuição.

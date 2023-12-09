@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Idioma do Site-->
+
+<!-------------------------------------------------------------------------------- Cabeça do site ------------------------------------------------------------------------------------------------------>
+<head>
+
+  <!--SEO do Site-->
+  <meta charset="UTF-8">
+
+  <!--Open Graphs Para redes sociais-->
+  <meta property="og:title" content="Arroz Com Feijão - Seu Site de Receitas!">
+  <meta property="og:description" content="Um livro de receitas online para qualquer apaixonado por comer bem!">
+
+  <meta name="description" content="Um livro de receitas online para qualquer apaixonado por comer bem!"> <!--Descrição do site quando encontrado via pesquisa-->
+  <meta name="keywords" content="Receitas, Brasil, Caseiras"> <!-- Palavras-chave relevantes -->
+  <meta name="author" content="André Antônio da Silva Queiroz"> <!-- Autor do conteúdo -->
+
+  <!-- Para melhorar a experiência de dispositivos móveis quando compartilhado o site -->
+  <meta property="og:image" content="URL_DA_IMAGEM">
+  <meta property="og:url" content="URL_DO_SEU_SITE"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- Compatibilidade com outros sites ou dispositivos -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com Internet Explorer -->
+
+  <!-- Ícone para apple -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <!-- Ícone para Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+  <!-- Ícone para Windows -->
+  <meta name="msapplication-TileImage" content="mstile-144x144.png"> 
+  <meta name="msapplication-TileColor" content="#ffffff">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" href="icon.png" type="image/x-icon"> <!--fav-icon do site-->
+  <title>Arroz Com Feijão - Seu Site de Receitas!</title> <!--titulo da guia-->
+</head>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<body class="body">
+
+  <!-------------------------------------------------------------------------------- Cabeçalho ----------------------------------------------------------------------------------------------------->
+  <header class="header">
+    <div class="header-logotipos">
+      <a href="index.html">
+        <h1 class="header-logotipo-title">ARROZ COM FEIJÃO</h1> <!-- Logotipo da página -->
+      </a>
+    </div>
+    <input class="header-search" type="text" placeholder="  Escreva aqui a receita que deseja procurar: (exemplo: Macarrão com salsicha)"> <!--input para pesquisar a receita-->
+    <button class="header-botão-de-pesquisar">
+      <img class="header-botao-de-pesquisar-img" src="minilupa.png" alt="pesquisar">
+    </button>
+    <img class="login" src="conta.png" alt="login"> <!--Icon para fazer login ou olhar a conta-->
+  </header>
+  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <!------------------------------------------------------------------------------- Menu de Navegação ------------------------------------------------------------------------------------------------->
+  <nav class="header-nav">
+    <a class="header-nav-item1" href="#">Bolos e Tortas</a>
+    <a class="header-nav-item2" href="#">Carnes</a>
+    <a class="header-nav-item3" href="#">Aves</a>
+    <a class="header-nav-item4" href="#">Peixes e Frutos do Mar</a>
+    <a class="header-nav-item5" href="#">Saladas e Molhos</a>
+    <a class="header-nav-item6" href="#">Sopas</a>
+    <a class="header-nav-item7" href="#">Massas</a>
+    <a class="header-nav-item8" href="#">Bebidas</a>
+    <a class="header-nav-item9" href="#">Doces e Sobremesas</a>
+    <a class="header-nav-item10" href="#">Lanches</a>
+    <a class="header-nav-item11" href="#">Alimentação Saudável</a>
+    <a class="header-nav-item12" href="#">Todas as Receitas</a>
+  </nav>
+  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+  <br>
+
+  <!--área de receitas populares-->
+  <div class="receitas-populares">
+    <!-- Banner da seção Receitas Destaques -->
+    <div class="receitas-populares-content">
+      <img class="receitas-populares-img" src="macarrão com salsicha.jpg">
+    </div>
+  </div>
+
+  <!--área de outras receitas-->
+  <div class="outras-receitas">
+
+    <!-- Fileiras de Imagens de Receitas -->
+
+    <!-- Fileira horizontal de imagens - 1 -->
+    <div class="outras-receitas-content-part-1">
+      <img class="outras-receitas-img" src="enrolado de salsicha.jpg">
+      <img class="outras-receitas-img2" src="feijoada.png">
+      <img class="outras-receitas-img3" src="pastel.jpg">
+    </div>
+
+    <!-- Fileira horizontal de imagens - 2 -->
+    <div class="outras-receitas-content-part-2">
+      <img class="outras-receitas-img4" src="espetinho.jpg">
+      <img class="outras-receitas-img5" src="frango-assado.jpg">
+      <img class="outras-receitas-img6" src="bolonhesa.jpg">
+    </div>
+
+    <!-- Fileira horizontal de imagens - 3-->
+    <div class="outras-receitas-content-part-3">
+      <img class="outras-receitas-img7" src="esfiha.jpg">
+      <img class="outras-receitas-img8" src="coxinha.jpg">
+      <img class="outras-receitas-img9" src="bolinha-de-queijo.jpg">
+    </div>
+  </div> <!--final da área outras receitas com conteúdos de imagem-->
+
+  <!--área de receitas em vídeo-->
+  <div class="outras-receitas-receitas-em-video">
+    <div class="outras-receitas-receitas-em-video-text">
+      <h2 class="outras-receitas-receitas-em-video-subtitulo">Receitas em Video</h2>
+      <p class="outras-receitas-receitas-em-video-paragraph">Receitas com videos aulas e passo a passos intuitivos e práticos!</p>
+    </div>
+
+  <!--Fileira horizontal de videos - 1-->
+    <div class="outras-receitas-receitas-em-video-part1">
+      <iframe class="outras-receitas-receitas-em-video-video1" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+      <iframe class="outras-receitas-receitas-em-video-video2" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+      <iframe class="outras-receitas-receitas-em-video-video3" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+  <!--Fileira horizontal de videos - 2-->
+    <div class="outras-receitas-receitas-em-video-part2">
+      <iframe class="outras-receitas-receitas-em-video-video4" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+      <iframe class="outras-receitas-receitas-em-video-video5" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+      <iframe class="outras-receitas-receitas-em-video-video6" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+  <!--Fileira horizontal de videos - 3-->
+    <div class="outras-receitas-receitas-em-video-part3">
+      <iframe class="outras-receitas-receitas-em-video-video7" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+      <iframe class="outras-receitas-receitas-em-video-video8" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+      <iframe class="outras-receitas-receitas-em-video-video9" width="560" height="315" src="https://www.youtube.com/embed/SEU_CODIGO_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+  <!--texto final antes de chegar no rodapé-->
+    <p class="pré-footer-text-paragraph">Nosso site tem milhares de receitas brasileiras, fáceis e com qualidade, recomende o site para os seus amigos, família e colegas.
+      <br>
+   Arroz com feijão, feito com amor, para melhorar sua refeição!
+    </p> 
+  </div> <!--Aqui finaliza-se a área de receitas em vídeo-->
+
+  <!-------------------------------------------------------------------------------- Rodapé ------------------------------------------------------------------------------------------------------>
+  <footer class="footer-final">
+    <div class="footer-logo">
+      <!--Logotipo do site no rodapé-->
+      <a href="index.html" class="footer-text-informacoes-third-title">ARROZ COM FEIJÃO</a>
+      <!--redirecionando ao clicado, para a home-->
+    </div>
+
+    <!--área do Menu de informações-->
+    <div class="footer-main-menu">
+      <a href="#" class="footer-main-menu-item1">Quem Somos</a>
+      <a href="#" class="footer-main-menu-item2">Termos de Uso</a>
+      <a href="#" class="footer-main-menu-item3">Privacidade</a>
+    </div>
+
+    <!--área do Menu de rede sociais-->
+    <div class="footer-mini-menu">
+      <ul class="footer-mini-menu-list">
+        <li class="footer-mini-menu-redes-sociais">Redes Sociais:</li>
+        <li class="footer-mini-menu-redes-sociais-item1">
+          <a href="https://api.whatsapp.com/send?phone=5543996310873&text=Salve%2C%20b%C3%B3%20se%20inturmar%3F"
+            target="_blank">
+            <img class="whatsapp" src="whatsapp.png" alt="whatsapp">
+          </a>
+        </li>
+        <li class="footer-mini-menu-redes-sociais-item2">
+          <a href="https://github.com/777SevenSeven" target="_blank">
+            <img class="github" src="github.png" alt="github">
+          </a>
+        </li>
+        <li class="footer-mini-menu-redes-sociais-item3">
+          <a href="https://www.linkedin.com/in/andre-queirozz/" target="_blank">
+            <img class="linkedin" src="linkedin.png" alt="linkedin">
+          </a>
+        </li>
+        <li class="footer-mini-menu-redes-sociais-item4">
+          <a href="https://www.instagram.com/andrequeir0z/" target="_blank">
+            <img class="instagram" src="instagram.png" alt="instagram">
+          </a>
+        </li>
+        <li class="footer-mini-menu-redes-sociais-item5">
+          <a href="https://www.facebook.com/AndreAntonioz/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"
+            target="_blank">
+            <img class="facebook" src="facebook.png" alt="facebook">
+          </a>
+        </li>
+      </ul>
+
+      <!--área de Informações de contato do rodapé-->
+      <ul>
+        <p class="footer-menu-contato-title">Contato</p>
+        <li class="footer-menu-contato-item1">Telefone:+55 43 99631-0873</li>
+        <li class="footer-menu-contato-item2">Email:andreantoniodasilvaqueiroz@gmail.com</li>
+      </ul>
+    </div>
+
+    <!--área de copyrights do site-->
+    <div class="footer-text-informacoes-copyrights">
+      <p class="footer-text-informacoes-paragraph">
+        © 2023 Arroz com Feijão. Desenvolvido por André Antônio da Silva Queiroz (777SevenSeven). Todos os direitos
+        reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

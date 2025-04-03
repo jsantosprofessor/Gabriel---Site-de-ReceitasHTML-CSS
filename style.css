@@ -1,22 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 .body {
-    
-    background-image: url( 'img/imagem1.jpg');
+   justify-content: center;
+   align-items: center; 
+   height: 100vh;
+   background-image: url( 'img/imagem1.jpg');
    background-size: auto;
    background-repeat: no-repeat;
 }
 
 .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 28px 0 28px 0;
     background-color: #fc6b0a; 
     margin: 0 0 0 0;
@@ -31,78 +35,15 @@
     margin: 0 0 0 400px;
 }
 
-.header-logotipo-title {
-    font-weight: bold;
+.headertitle {
+   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 38px;
-    color: #180101;
-    margin-right: auto;
+    color: #361ded9e;
+    
+    
 }
 
-.header-search {
-    border: none;
-    flex: 1;
-    height: 44px;
-    margin: 0 0 0 40px;
-    box-shadow: 1px 2px 8px #051ce2;
-    border-radius: 45px 0 0 45px;
-    background-color: #060113; 
-    color: #eff7f3; 
-    width: 100%;
-}
-
-.header-botao-de-pesquisar-img {
-    height: 30px;
-    width: 30px;
-}
-
-.header-botão-de-pesquisar {
-    order: 3;
-    background-color: #fa620a;
-    color: #f2edf3;
-    border: none;
-    cursor: pointer;
-    border-radius: 0 50px 50px 0;
-    padding: 7px 15px;
-    display: flex;
-    align-items: center;
-    margin: 0 0px 0 0;
-    box-shadow: 2px 2px 8px #1f1e1d;
-}
-
-.login {
-    order: 4;
-    border: none;
-    cursor: pointer;
-    margin: 0 400px 0 45px;
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    box-shadow: 2px 2px 8px #1f1410a6;
-    border-radius: 80px 80px 80px 80px;
-    background-color: #FFFDD0;
-}
-
-.header-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: center;
-    color:  #FFFFFF;
-    background-color: #2D1E18;
-    border-bottom: 1px solid #333333;
-    font-size: 16px;
-    font-weight: normal;
-    padding: 5px 0 5px 0;
-}
-
-.header-nav a:hover {
-    color: #e9b2a9;
-    text-decoration: none;
-    border-bottom: 2px solid #333333;
-}
 .header-nav-item1 {
     margin: 0 5px 0 290px;
     color:  #FFFFFF;
@@ -198,12 +139,12 @@
 }
 
 .receitas-populares {
-    margin: 0 0 0 50px;
+    margin: 0;
     flex: column;
     justify-content: center;
     align-items: center;
     color:  #333333;
-    margin: 0 468px 0 468px;
+    margin: 0 100px 0 100px;
 }
 
 .receitas-populares-texto-na-imagem-titulo-principal {
@@ -213,21 +154,22 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    margin: 50px 0 20px 0;
-    z-index: 1;
+    
+    
 }
 
 .receitas-populares-img {
 
     filter: brightness(50%); 
-    flex: column;
-    justify-content: left;
+    flex: center;
+    justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    width: 940px;
+    width: 940px; /* aumenta o tamanho do bloco do receitas em destaque */
     height: 271px;
     border-radius: 10px 10px 10px 10px;
-    display: block;
+    display: flex;
+    margin-top: 30px;
 }
 
 .receitas-populares-ancora {
@@ -268,7 +210,8 @@
     margin: 0 30px 90px 30px;
 }
 .outras-receitas {
-    margin: 0 0 0 50px;
+    
+    margin: 0 0 0 0px;
     flex: column;
     justify-content: center;
     align-items: center;
@@ -345,7 +288,7 @@
     justify-content: left;
     align-items: center;
     flex-shrink: 0;
-    height: 350spx;
+    height: 350px;
     width: 300px;
     margin-top: 25px;
     border-radius: 10px 10px 10px 10px;
@@ -449,7 +392,7 @@
     justify-content: center;
     align-items: center;
     color: #333333;
-    margin: 0 468px 0 468px;
+    margin: 0 100px 0 100px;
 }
 
 .outras-receitas-receitas-em-video-subtitulo {
@@ -950,7 +893,6 @@ iframe:hover {
     filter: brightness(100%); /* Deixa os vídeos mais claros ao passar o mouse */
     transform: scale(1.05); /* Dá um leve zoom para destacar o vídeo */
 }
-
 
 
 
